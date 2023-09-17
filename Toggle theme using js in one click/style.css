@@ -1,0 +1,42 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--color-body);
+}
+
+:root{
+    --hue-color: 268;
+    --primary-color: hsla(268, 64%, 21%, 0.889);
+    --primary-color-light: hsla(268, 64%, 50%, 0.889);
+    --color-body:hsla(268, 45%, 96%);
+    --color-text:hsla(268, 20%, 20%, 0.889)
+
+}
+
+.dark-mode{
+    --primary-color: hsla(268, 64%, 48%, 0.889);
+    --primary-color-light: hsla(268, 64%, 50%, 0.889);
+    --color-body:hsla(268, 49%, 10%);
+    --color-text:hsla(268, 20%, 90%, 0.889)
+}
+h2{
+    color: var(--primary-color);
+}
+
+.toggle-theme{
+    border: none;
+    outline: none;
+    font-size: inherit;
+    padding: 1rem 1.5rem;
+    background: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s background;
+}
+
+.toggle-theme:hover{
+    background: var(--primary-color-light);
+}
+
+p{
+    color: var(--color-text);
+}
